@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 
-public class LagbajaSchool {
+public class LagbajaSchool  {
 public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -69,13 +69,13 @@ System.out.println("Invalid score. Please enter a score between 0 and 100.");
         System.out.printf("%-10s", "STUDENT");
         for (String subject : subjectNames) {
          System.out.printf("%-10s", subject);
-  }
+  
        System.out.println(" Total    Average    Position ");        
        System.out.println("********************************************************");
 	
-	 //for (int i = 0; i < students.length; i++) {
+	 for (int i = 0; i < students.length; i++) {
             System.out.printf("%-15s", students[i].name);
-            //for (double score : students[i].scores) {
+            for (double score : students[i].scores) {
                 System.out.printf("%-10.0f", score);
             }
             System.out.printf("%-10.0f %-10.2f %-10d%n", students[i].total, students[i].average, i + 1);
@@ -83,6 +83,7 @@ System.out.println("Invalid score. Please enter a score between 0 and 100.");
 
         System.out.println("====================================================");
     }
+
+
 }
-
-
+}
